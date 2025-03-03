@@ -1,0 +1,28 @@
+# Project Name
+RUST Impl
+
+## Description
+implementation of  the Layer 2 Sequencer algorithm in Rust using the Substrate blockchain framework. This implementation includes transaction ordering using a priority queue and Verifiable Delay Functions (VDF).
+
+## Storage Structures
+- **Transactions**: A mapping of transaction hashes to their computed delays.
+- **OrderedTransactions**: A vector storing ordered transaction hashes.
+
+## Transaction Submission
+1. A user submits a transaction.
+2. A cryptographic commitment (hash) is created.
+3. A VDF is applied to compute a delay value.
+4. The transaction is stored in the queue.
+
+## Ordering Transactions
+- The module sorts transactions based on the computed delay.
+- Ordered transactions are stored and ready to be batched to Layer 1.
+
+## VDF Simulation
+- A simple delay function computes a pseudo-random delay based on transaction hash bytes.
+- This implementation can be deployed as a Substrate pallet and integrated into a Layer 2 rollup solution.
+
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request.
+
+
