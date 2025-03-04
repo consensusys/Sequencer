@@ -1,7 +1,5 @@
 # ChronoSeq: A Fair and Decentralized Layer 2 Blockchain Sequencer
 
-![ChronoSeq Logo](https://github.com/consensusys/Sequencer/assets/logo.png)
-
 ChronoSeq is a decentralized Layer 2 blockchain sequencer designed to enhance fairness, scalability, and security in transaction ordering. It leverages **Verifiable Delay Functions (VDFs)** to ensure an unbiased, tamper-resistant, and decentralized transaction sequencing mechanism.
 
 ## Features
@@ -62,11 +60,3 @@ To contribute, follow these steps:
 4. Run tests: `go test ./...`
 5. Submit a pull request.
 
-## License
-This project is licensed under the **MIT License**. See the `LICENSE` file for details.
-
-## Acknowledgments
-Special thanks to the Ethereum and blockchain research community for inspiring the development of ChronoSeq.
-
----
-For more details, check out our paper: *ChronoSeq: A Fair and Decentralized Layer 2 Blockchain Sequencer Using VDFs* 📄
