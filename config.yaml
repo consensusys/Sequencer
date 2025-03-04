@@ -1,0 +1,26 @@
+network:
+  rpc_endpoint: "https://l2-network.example.com"
+  chain_id: 420
+
+sequencer:
+  vdf_difficulty: 2048
+  max_txs_per_block: 100
+  consensus: "PoS"
+  mempool_size: 5000
+  block_time: 5  # Block time in seconds
+
+logging:
+  level: "info"
+  output: "logs/sequencer.log"
+
+api:
+  enabled: true
+  port: 8080
+  allowed_origins: ["*"]
+
+security:
+  enable_fraud_proofs: true
+  fraud_proof_timeout: 60  # in seconds
+  key_management:
+    private_key_path: "secrets/priv_key.pem"
+    enable_hsm: false
